@@ -1,0 +1,12 @@
+@use "../util/functions" as util;
+
+// Font sizes
+$xl: util.rem(28);
+$l: util.rem(18);
+$m: util.rem(14);
+$s: util.rem(12);
+$xs: util.rem(9);
+
+// Font weights
+$light: 400;
+$medium: 500;

@@ -1,5 +1,10 @@
 :root {
-  --gray: #333333;
+  --violet: #21092F;
+  --purplish-gray: #8F8694;
+  --light-gray: #DFDEE0;
+  --white: #FFFFFF;
+  --red: #FF5050;
+  --gradient: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
 }
 
 /* makes sizing simpler */
@@ -38,6 +43,7 @@ video {
 
 :root {
   font-size: 1rem;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 body {

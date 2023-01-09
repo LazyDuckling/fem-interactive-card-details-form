@@ -34,7 +34,7 @@
         background-repeat: no-repeat;
         background-size: contain;
 
-        filter: drop-shadow(0px 39px 60px rgba(0, 0, 0, 0.142481));
+        filter: drop-shadow(0 util.rem(16) util.rem(8) rgba(0, 0, 0, 0.14));
 
         &-logo {
             grid-area: 1 / 1 / 2 / 2;

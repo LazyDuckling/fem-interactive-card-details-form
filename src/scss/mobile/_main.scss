@@ -9,5 +9,13 @@
 
 body {
     margin: 0;
-    background-color: var(--gray);
+
+    background-color: var(--white);
+
+    color: var(--violet);
+}
+
+main {
+    display: grid;
+    grid-template: repeat(2, auto) / auto;
 }

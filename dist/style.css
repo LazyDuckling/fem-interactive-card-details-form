@@ -4,7 +4,6 @@
   --light-gray: #DFDEE0;
   --white: #FFFFFF;
   --red: #FF5050;
-  --gradient: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
 }
 
 /* makes sizing simpler */
@@ -48,7 +47,75 @@ video {
 
 body {
   margin: 0;
-  background-color: var(--gray);
+  background-color: var(--white);
+  color: var(--violet);
+}
+
+main {
+  display: grid;
+  grid-template: repeat(2, auto)/auto;
+}
+
+.card {
+  display: grid;
+  grid-template: repeat(2, auto)/auto;
+  background-image: url("../../../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 85%;
+  color: var(--white);
+}
+.card__front {
+  display: grid;
+  grid-template: repeat(3, -webkit-max-content)/repeat(2, auto);
+  grid-template: repeat(3, max-content)/repeat(2, auto);
+  grid-area: 2/1/3/2;
+  justify-self: start;
+  z-index: 2;
+  margin: -4.25rem 0 0 1rem;
+  padding: 1rem 1.25rem;
+  width: 17.875rem;
+  height: 9.8125rem;
+  background-image: url("../../../images/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.card__front-logo {
+  grid-area: 1/1/2/2;
+  width: 3.375rem;
+  margin: 0 0 2.5rem 0;
+}
+.card__front-number {
+  grid-area: 2/1/3/3;
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  letter-spacing: 0.1375rem;
+}
+.card__front-name {
+  grid-area: 3/1/4/2;
+  font-size: 0.75rem;
+}
+.card__front-exp {
+  grid-area: 3/2/4/3;
+  justify-self: end;
+  font-size: 0.75rem;
+}
+.card__back {
+  display: grid;
+  grid-area: 1/1/2/2;
+  justify-self: end;
+  z-index: 1;
+  margin: 2rem 1rem 0 0;
+  width: 17.875rem;
+  height: 9.8125rem;
+  background-image: url("../../../images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.card__back-cvc {
+  align-self: center;
+  justify-self: end;
+  margin: -0.25rem 2rem 0 0;
+  font-size: 0.75rem;
 }
 
 /*

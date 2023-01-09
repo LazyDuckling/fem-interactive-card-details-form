@@ -14,9 +14,12 @@
   <body>
     <main>
       <!-- Left side of page -->
+
       <div class="card">
+
         <!-- Front of card-->
         <div class="card__front">
+          <img src="images/card-logo.svg" class="card__front-logo">
           <span class="card__front-number">0000 0000 0000 0000</span>
           <span class="card__front-name">Name</span>
           <span class="card__front-exp">MM/YY</span>
@@ -24,7 +27,7 @@
 
         <!-- Back of card -->
         <div class="card__back">
-          <span class="card__back-cvd">000</span>
+          <span class="card__back-cvc">000</span>
         </div>
 
       </div>
@@ -50,7 +53,7 @@
           <!-- Error messages for Exp. Date -->
           <label for="exp date" class="details__form-error"></label>
   
-          <label for="cvc" class="details__form-label">CVC (on back of card)</label> <!-- Make this update depending on card type for the name and location -->
+          <label for="cvc" class="details__form-label">CVC (on back of card)</label>
           <input type="text" name="cvc" placeholder="e.g. 000" class="details__form-input">
           <!-- Error messages for CVC -->
           <label for="cvc" class="details__form-error"></label>

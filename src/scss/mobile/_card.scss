@@ -13,6 +13,8 @@
 
     color: var(--white);
 
+    margin: 0 0 util.rem(48) 0;
+
     // Front of the credit card
     &__front {
         display: grid;
@@ -32,6 +34,8 @@
         background-repeat: no-repeat;
         background-size: contain;
 
+        filter: drop-shadow(0px 39px 60px rgba(0, 0, 0, 0.142481));
+
         &-logo {
             grid-area: 1 / 1 / 2 / 2;
 
@@ -46,13 +50,14 @@
             margin: 0 0 util.rem(16) 0;
 
             font-size: fonts.$l;
-            letter-spacing: util.rem(2.2);
+            letter-spacing: fonts.$spacing-m;
         }
 
         &-name {
             grid-area: 3 / 1 / 4 / 2;
 
             font-size: fonts.$s;
+            letter-spacing: fonts.$spacing-s;
         }
 
         &-exp {
@@ -60,6 +65,7 @@
             justify-self: end;
 
             font-size: fonts.$s;
+            letter-spacing: fonts.$spacing-s;
         }
     }
 
@@ -87,6 +93,7 @@
             margin: util.rem(-4) util.rem(32) 0 0;
 
             font-size: fonts.$s;
+            letter-spacing: fonts.$spacing-s;
         }
     }
 }

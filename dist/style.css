@@ -63,6 +63,7 @@ main {
   background-repeat: no-repeat;
   background-size: 100% 85%;
   color: var(--white);
+  margin: 0 0 3rem 0;
 }
 .card__front {
   display: grid;
@@ -78,6 +79,7 @@ main {
   background-image: url("../../../images/bg-card-front.png");
   background-repeat: no-repeat;
   background-size: contain;
+  filter: drop-shadow(0px 39px 60px rgba(0, 0, 0, 0.142481));
 }
 .card__front-logo {
   grid-area: 1/1/2/2;
@@ -93,11 +95,13 @@ main {
 .card__front-name {
   grid-area: 3/1/4/2;
   font-size: 0.75rem;
+  letter-spacing: 0.08125rem;
 }
 .card__front-exp {
   grid-area: 3/2/4/3;
   justify-self: end;
   font-size: 0.75rem;
+  letter-spacing: 0.08125rem;
 }
 .card__back {
   display: grid;
@@ -116,6 +120,11 @@ main {
   justify-self: end;
   margin: -0.25rem 2rem 0 0;
   font-size: 0.75rem;
+  letter-spacing: 0.08125rem;
+}
+
+.details {
+  margin: 0 1rem;
 }
 
 /*

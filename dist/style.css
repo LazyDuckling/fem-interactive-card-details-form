@@ -7,11 +7,22 @@
   --gradient: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
 }
 
+.details__form-label:hover {
+  cursor: pointer;
+}
 .details__form-input:focus {
   background: linear-gradient(var(--white), var(--white)), var(--gradient);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   border: double 0.0625rem transparent;
+}
+.details__form-btn:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+.details__submitted-btn:hover {
+  cursor: pointer;
+  opacity: 90%;
 }
 
 /* makes sizing simpler */
@@ -137,6 +148,7 @@ main {
   margin: 0 1rem;
 }
 .details__form {
+  display: grid;
   font-size: 0.875rem;
 }
 .details__form-header {
@@ -173,10 +185,39 @@ main {
 }
 .details__form-btn {
   width: 100%;
+  background-color: var(--violet);
+  margin: 0.75rem 0 0 0;
   padding: 1rem 0;
   border-radius: 0.5rem;
   border-style: none;
   font-size: 1.125rem;
+  transition: background-color, 200ms;
+}
+.details__submitted {
+  display: none;
+  grid-template: repeat(4, auto)/auto;
+  justify-items: center;
+  font-weight: 500;
+}
+.details__submitted-thankyou {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2125rem;
+  margin: 2rem 0 1.5rem 0;
+}
+.details__submitted-text {
+  font-size: 1.125rem;
+  color: var(--purplish-gray);
+}
+.details__submitted-btn {
+  width: 100%;
+  background-color: var(--violet);
+  margin: 3rem 0 0 0;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  border-style: none;
+  font-size: 1.125rem;
+  transition: background-color, 200ms;
 }
 
 /*

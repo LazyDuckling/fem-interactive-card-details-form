@@ -9,6 +9,7 @@
     margin: 0 util.rem(16);
 
     &__form {
+        display: grid;
         font-size: fonts.$m;
 
         &-header {
@@ -50,12 +51,54 @@
         &-btn {
             width: 100%;
 
+            background-color: var(--violet);
+
+            margin: util.rem(12) 0 0 0;
             padding: util.rem(16) 0;
 
             border-radius: util.rem(8);
             border-style: none;
 
             font-size: fonts.$l;
+
+            transition: background-color, 200ms;
+        }
+    }
+
+    &__submitted {
+        display: none;
+        grid-template: repeat(4, auto) / auto;
+        justify-items: center;
+
+        font-weight: fonts.$medium;
+
+        &-thankyou {
+            font-size: fonts.$xl;
+            text-transform: uppercase;
+            letter-spacing: fonts.$spacing-l;
+
+            margin: util.rem(32) 0 util.rem(24) 0;
+        }
+
+        &-text {
+            font-size: fonts.$l;
+            color: var(--purplish-gray);
+        }
+
+        &-btn {
+            width: 100%;
+
+            background-color: var(--violet);
+
+            margin: util.rem(48) 0 0 0;
+            padding: util.rem(16) 0;
+
+            border-radius: util.rem(8);
+            border-style: none;
+
+            font-size: fonts.$l;
+
+            transition: background-color, 200ms;
         }
     }
 }

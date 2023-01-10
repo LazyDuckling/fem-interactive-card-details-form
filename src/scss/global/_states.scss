@@ -4,6 +4,12 @@
 
 .details {
     &__form {
+        &-label {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        
         &-input {
             &:focus {
                 // Input gradient border color from: https://theadhocracy.co.uk/wrote/gradient-borders-with-rounded-corners-on-input-fields
@@ -14,6 +20,24 @@
                 background-clip: padding-box, border-box;
 
                 border: double util.rem(1) transparent;
+            }
+        }
+
+        &-btn {
+            &:hover {
+                cursor: pointer;
+
+                opacity: 90%;
+            }
+        }
+    }
+
+    &__submitted {
+        &-btn {
+            &:hover {
+                cursor: pointer;
+
+                opacity: 90%;
             }
         }
     }

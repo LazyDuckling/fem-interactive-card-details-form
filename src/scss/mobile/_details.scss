@@ -3,5 +3,59 @@
 @use "../global/typography" as fonts;
 
 .details {
+    display: grid;
+    grid-template: repeat(4, auto) / auto;
+
     margin: 0 util.rem(16);
+
+    &__form {
+        font-size: fonts.$m;
+
+        &-header {
+            font-size: fonts.$xl;
+
+            margin: 0 0 util.rem(24) 0;
+        }
+
+        &-label {
+            text-transform: uppercase;
+            font-weight: fonts.$medium;
+            letter-spacing: fonts.$spacing-s;
+        }
+
+        &-input {
+            width: 100%;
+
+            font-size: fonts.$l;
+            color: var(--violet);
+            font-weight: fonts.$medium;
+
+            border-radius: util.rem(8);
+            border-color: var(--light-gray);
+            border-style: solid;
+            border-width: util.rem(1);
+
+            background-color: var(--white);
+
+            margin: util.rem(8) 0 util.rem(24) 0;
+            padding: util.rem(10) util.rem(16);
+
+            outline-style: none;
+
+            &::placeholder {
+                color: var(--purplish-gray);
+            }
+        }
+
+        &-btn {
+            width: 100%;
+
+            padding: util.rem(16) 0;
+
+            border-radius: util.rem(8);
+            border-style: none;
+
+            font-size: fonts.$l;
+        }
+    }
 }

@@ -1,0 +1,20 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "../global/typography" as fonts;
+
+.details {
+    &__form {
+        &-input {
+            &:focus {
+                // Input gradient border color from: https://theadhocracy.co.uk/wrote/gradient-borders-with-rounded-corners-on-input-fields
+                background: linear-gradient(var(--white), var(--white)),
+                            var(--gradient);
+
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+
+                border: double util.rem(1) transparent;
+            }
+        }
+    }
+}

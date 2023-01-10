@@ -4,6 +4,14 @@
   --light-gray: #DFDEE0;
   --white: #FFFFFF;
   --red: #FF5050;
+  --gradient: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+}
+
+.details__form-input:focus {
+  background: linear-gradient(var(--white), var(--white)), var(--gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: double 0.0625rem transparent;
 }
 
 /* makes sizing simpler */
@@ -124,7 +132,51 @@ main {
 }
 
 .details {
+  display: grid;
+  grid-template: repeat(4, auto)/auto;
   margin: 0 1rem;
+}
+.details__form {
+  font-size: 0.875rem;
+}
+.details__form-header {
+  font-size: 1.75rem;
+  margin: 0 0 1.5rem 0;
+}
+.details__form-label {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.08125rem;
+}
+.details__form-input {
+  width: 100%;
+  font-size: 1.125rem;
+  color: var(--violet);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border-color: var(--light-gray);
+  border-style: solid;
+  border-width: 0.0625rem;
+  background-color: var(--white);
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0.625rem 1rem;
+  outline-style: none;
+}
+.details__form-input::-moz-placeholder {
+  color: var(--purplish-gray);
+}
+.details__form-input:-ms-input-placeholder {
+  color: var(--purplish-gray);
+}
+.details__form-input::placeholder {
+  color: var(--purplish-gray);
+}
+.details__form-btn {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  border-style: none;
+  font-size: 1.125rem;
 }
 
 /*

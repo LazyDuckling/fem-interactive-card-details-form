@@ -115,6 +115,7 @@ main {
   grid-area: 3/1/4/2;
   font-size: 0.75rem;
   letter-spacing: 0.08125rem;
+  text-transform: uppercase;
 }
 .card__front-exp {
   grid-area: 3/2/4/3;

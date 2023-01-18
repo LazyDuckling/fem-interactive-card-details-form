@@ -4,25 +4,23 @@
 let getInputs = document.getElementsByClassName("details__form-input");
 let inputsArray = Array.from(getInputs);
 
-// Get card classes
+// Get card classes and convert getCard into an array
 let getCard = document.getElementsByClassName("card__front");
 let getCardCVC = getCard[0].nextElementSibling.firstElementChild;
-
-// Convert getCard into an array
 let cardChildren = Array.from(getCard[0].children);
 
-/* Remove the logo from the cardChildren array and add the card CVC to it.
-Also changes the position of the card number within the array to match the inputs */
-let test = cardChildren.splice(0, 2);
+/* Removes the logo from the cardChildren array and add the card CVC to it.
+Also changes the position of the card number within the array to match the inputs array */
+let removedValues = cardChildren.splice(0, 2);
 cardChildren.push(getCardCVC);
-cardChildren.splice(1, 0, test[1]);
+cardChildren.splice(1, 0, removedValues[1]);
 
 // Get input from fields and put it on credit card images
 function updateCards(e) {
+    // Returns which field is receiving input
     let activeInput = inputsArray.indexOf(e.target);
-    if (e.target.value != "") {
-        // Returns which field is receiving input
 
+    if (e.target.value != "") {
         // Update the card information
         cardChildren[activeInput].innerHTML = e.target.value;
 
@@ -45,5 +43,5 @@ document.onload = addEventListeners();
 
 // Form verification
 function verifyName() {
-
+    
 }
